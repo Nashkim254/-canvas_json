@@ -9,6 +9,15 @@ class MyCanvas extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(child: Scaffold());
+    return MaterialApp(
+      home: SafeArea(
+        child: Scaffold(
+          appBar: AppBar(
+            title: Text("Canvas"),
+            centerTitle: true,
+          ),
+        ),
+      ),
+    );
   }
 }
